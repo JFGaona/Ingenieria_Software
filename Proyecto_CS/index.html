@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <title>Usuario</title>
+</head>
+<body>
+    <form id="form-group">
+        <div class="form-group">
+            <label for="inputAddress">DNI</label>
+            <input type="text" class="dni" id="dni" placeholder="1234">
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Correo</label>
+            <input type="email" class="correo" id="correo" placeholder="Correo">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Nombre</label>
+            <input type="text" class="nombre" id="nombre" placeholder="sarita">
+          </div>
+        </div>
+          <div class="form-group col-md-4">
+            <label for="inputState">Tipo</label>
+            <select id="tipo" class="tipo">
+              <option selected value="">...</option>
+              <option value="Docente">Docente</option>
+              <option value="Estudiante">Estudiante</option>
+          </select>
+            <div class="form-group col-md-6" id="camposDocente" style="display: none;">
+              <div class="form-group col-md-4">
+                <label for="profesion">Profesión:</label>
+                <select id="profesion" name="profesion">
+                  <option>...</option>
+                  <option>Contador</option>
+
+                </select>
+                <label class="m2" for="inputtarjeta">Tarjeta profesional</label>
+      
+                <input type="text" class="nombre" id="tarjetaProf" placeholder="Tarjeta profesional">
+
+
+              </div>
+            </div>
+            <div class="form-group col-md-4" id="camposEstudiante" style="display: none;">
+              <div class="form-group col-md-4">
+                <label for="inputCodigo" >Código</label>
+                <input type="text" class="nombre" id="codigo" placeholder="cod">
+                <label for="inputPrograma">Programa</label>
+                <select id="programa" name="programa">
+                  <option>...</option>
+                  <option>Matemáticas</option>
+
+                </select>
+            </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <button type="button" id="guardarValor">Guardar Valor</button>
+      </form>
+
+      <table id="userTable">
+        <thead>
+          <tr>
+            <th>Identificacion</th>
+            <th>Correo</th>
+            <th>Nombre</th>
+            <th>Tipo</th>
+            <th>Profesion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí se agregarán las filas de datos de los usuarios -->
+        </tbody>
+      </table>
+
+      <script src="scrypt.js"></script>
+</body>
+</html>
